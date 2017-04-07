@@ -1,0 +1,461 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/dcodeIO/long.js#readme">long (v3.2.0)</a>
+</h1>
+<h4>A Long class for representing a 64-bit two's-complement integer value.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.long">module long</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.long.fromBits">
+            function <span class="apidocSignatureSpan">long.</span>fromBits
+            <span class="apidocSignatureSpan">(lowBits, highBits, unsigned)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.long.fromInt">
+            function <span class="apidocSignatureSpan">long.</span>fromInt
+            <span class="apidocSignatureSpan">(value, unsigned)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.long.fromNumber">
+            function <span class="apidocSignatureSpan">long.</span>fromNumber
+            <span class="apidocSignatureSpan">(value, unsigned)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.long.fromString">
+            function <span class="apidocSignatureSpan">long.</span>fromString
+            <span class="apidocSignatureSpan">(str, unsigned, radix)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.long.fromValue">
+            function <span class="apidocSignatureSpan">long.</span>fromValue
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.long.isLong">
+            function <span class="apidocSignatureSpan">long.</span>isLong
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">long.</span>MAX_UNSIGNED_VALUE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">long.</span>MAX_VALUE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">long.</span>MIN_VALUE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">long.</span>NEG_ONE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">long.</span>ONE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">long.</span>UONE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">long.</span>UZERO</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">long.</span>ZERO</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.long" id="apidoc.module.long">module long</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.long.fromBits" id="apidoc.element.long.fromBits">
+        function <span class="apidocSignatureSpan">long.</span>fromBits
+        <span class="apidocSignatureSpan">(lowBits, highBits, unsigned)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromBits(lowBits, highBits, unsigned) {
+    return new Long(lowBits, highBits, unsigned);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Signed zero.
+
+|                 |                 |
+|-----------------|-----------------|
+| **@type**       | *!Long*         |
+
+#### Long.<span class="apidocCodeKeywordSpan">fromBits</span>(lowBits, highBits, unsigned=)
+
+Returns a Long representing the 64 bit integer that comes by concatenating the given low and high bits. Each is
+assumed to use 32 bits.
+
+| Parameter       | Type            | Description
+|-----------------|-----------------|---------------
+| lowBits         | *number*        | The low 32 bits
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.long.fromInt" id="apidoc.element.long.fromInt">
+        function <span class="apidocSignatureSpan">long.</span>fromInt
+        <span class="apidocSignatureSpan">(value, unsigned)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromInt(value, unsigned) {
+    var obj, cachedObj, cache;
+    if (unsigned) {
+        value &gt;&gt;&gt;= 0;
+        if (cache = (0 &lt;= value &amp;&amp; value &lt; 256)) {
+            cachedObj = UINT_CACHE[value];
+            if (cachedObj)
+                return cachedObj;
+        }
+        obj = fromBits(value, (value | 0) &lt; 0 ? -1 : 0, true);
+        if (cache)
+            UINT_CACHE[value] = obj;
+        return obj;
+    } else {
+        value |= 0;
+        if (cache = (-128 &lt;= value &amp;&amp; value &lt; 128)) {
+            cachedObj = INT_CACHE[value];
+            if (cachedObj)
+                return cachedObj;
+        }
+        obj = fromBits(value, value &lt; 0 ? -1 : 0, false);
+        if (cache)
+            INT_CACHE[value] = obj;
+        return obj;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+| Parameter       | Type            | Description
+|-----------------|-----------------|---------------
+| lowBits         | *number*        | The low 32 bits
+| highBits        | *number*        | The high 32 bits
+| unsigned        | *boolean*       | Whether unsigned or not, defaults to `false` for signed
+| **@returns**    | *!Long*         | The corresponding Long value
+
+#### Long.<span class="apidocCodeKeywordSpan">fromInt</span>(value, unsigned=)
+
+Returns a Long representing the given 32 bit integer value.
+
+| Parameter       | Type            | Description
+|-----------------|-----------------|---------------
+| value           | *number*        | The 32 bit integer in question
+| unsigned        | *boolean*       | Whether unsigned or not, defaults to `false` for signed
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.long.fromNumber" id="apidoc.element.long.fromNumber">
+        function <span class="apidocSignatureSpan">long.</span>fromNumber
+        <span class="apidocSignatureSpan">(value, unsigned)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromNumber(value, unsigned) {
+    if (isNaN(value) || !isFinite(value))
+        return unsigned ? UZERO : ZERO;
+    if (unsigned) {
+        if (value &lt; 0)
+            return UZERO;
+        if (value &gt;= TWO_PWR_64_DBL)
+            return MAX_UNSIGNED_VALUE;
+    } else {
+        if (value &lt;= -TWO_PWR_63_DBL)
+            return MIN_VALUE;
+        if (value + 1 &gt;= TWO_PWR_63_DBL)
+            return MAX_VALUE;
+    }
+    if (value &lt; 0)
+        return fromNumber(-value, unsigned).neg();
+    return fromBits((value % TWO_PWR_32_DBL) | 0, (value / TWO_PWR_32_DBL) | 0, unsigned);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+| Parameter       | Type            | Description
+|-----------------|-----------------|---------------
+| value           | *number*        | The 32 bit integer in question
+| unsigned        | *boolean*       | Whether unsigned or not, defaults to `false` for signed
+| **@returns**    | *!Long*         | The corresponding Long value
+
+#### Long.<span class="apidocCodeKeywordSpan">fromNumber</span>(value, unsigned=)
+
+Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned.
+
+| Parameter       | Type            | Description
+|-----------------|-----------------|---------------
+| value           | *number*        | The number in question
+| unsigned        | *boolean*       | Whether unsigned or not, defaults to `false` for signed
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.long.fromString" id="apidoc.element.long.fromString">
+        function <span class="apidocSignatureSpan">long.</span>fromString
+        <span class="apidocSignatureSpan">(str, unsigned, radix)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromString(str, unsigned, radix) {
+    if (str.length === 0)
+        throw Error('empty string');
+    if (str === "NaN" || str === "Infinity" || str === "+Infinity" || str === "-Infinity")
+        return ZERO;
+    if (typeof unsigned === 'number') {
+        // For goog.math.long compatibility
+        radix = unsigned,
+        unsigned = false;
+    } else {
+        unsigned = !! unsigned;
+    }
+    radix = radix || 10;
+    if (radix &lt; 2 || 36 &lt; radix)
+        throw RangeError('radix');
+
+    var p;
+    if ((p = str.indexOf('-')) &gt; 0)
+        throw Error('interior hyphen');
+    else if (p === 0) {
+        return fromString(str.substring(1), unsigned, radix).neg();
+    }
+
+    // Do several (8) digits each time through the loop, so as to
+    // minimize the calls to the very expensive emulated div.
+    var radixToPower = fromNumber(pow_dbl(radix, 8));
+
+    var result = ZERO;
+    for (var i = 0; i &lt; str.length; i += 8) {
+        var size = Math.min(8, str.length - i),
+            value = parseInt(str.substring(i, i + size), radix);
+        if (size &lt; 8) {
+            var power = fromNumber(pow_dbl(radix, size));
+            result = result.mul(power).add(fromNumber(value));
+        } else {
+            result = result.mul(radixToPower);
+            result = result.add(fromNumber(value));
+        }
+    }
+    result.unsigned = unsigned;
+    return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+| Parameter       | Type            | Description
+|-----------------|-----------------|---------------
+| value           | *number*        | The number in question
+| unsigned        | *boolean*       | Whether unsigned or not, defaults to `false` for signed
+| **@returns**    | *!Long*         | The corresponding Long value
+
+#### Long.<span class="apidocCodeKeywordSpan">fromString</span>(str, unsigned=, radix=)
+
+Returns a Long representation of the given string, written using the specified radix.
+
+| Parameter       | Type            | Description
+|-----------------|-----------------|---------------
+| str             | *string*        | The textual representation of the Long
+| unsigned        | *boolean &amp;#124; number* | Whether unsigned or not, defaults to `false` for signed
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.long.fromValue" id="apidoc.element.long.fromValue">
+        function <span class="apidocSignatureSpan">long.</span>fromValue
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromValue(val) {
+    if (val /* is compatible */ instanceof Long)
+        return val;
+    if (typeof val === 'number')
+        return fromNumber(val);
+    if (typeof val === 'string')
+        return fromString(val);
+    // Throws for non-objects, converts non-instanceof Long:
+    return fromBits(val.low, val.high, val.unsigned);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Tests if the specified object is a Long.
+
+| Parameter       | Type            | Description
+|-----------------|-----------------|---------------
+| obj             | ***             | Object
+| **@returns**    | *boolean*       |
+
+#### Long.<span class="apidocCodeKeywordSpan">fromValue</span>(val)
+
+Converts the specified value to a Long.
+
+| Parameter       | Type            | Description
+|-----------------|-----------------|---------------
+| val             | *!Long &amp;#124; number &amp;#124; string &amp;#124; !{low: number, high: number, unsigned: boolean}* |
+Value
+| **@returns**    | *!Long*         |
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.long.isLong" id="apidoc.element.long.isLong">
+        function <span class="apidocSignatureSpan">long.</span>isLong
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isLong(obj) {
+    return (obj &amp;&amp; obj["__isLong__"]) === true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+| Parameter       | Type            | Description
+|-----------------|-----------------|---------------
+| str             | *string*        | The textual representation of the Long
+| unsigned        | *boolean &amp;#124; number* | Whether unsigned or not, defaults to `false` for signed
+| radix           | *number*        | The radix in which the text is written (2-36), defaults to 10
+| **@returns**    | *!Long*         | The corresponding Long value
+
+#### Long.<span class="apidocCodeKeywordSpan">isLong</span>(obj)
+
+Tests if the specified object is a Long.
+
+| Parameter       | Type            | Description
+|-----------------|-----------------|---------------
+| obj             | ***             | Object
+| **@returns**    | *boolean*       |
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
