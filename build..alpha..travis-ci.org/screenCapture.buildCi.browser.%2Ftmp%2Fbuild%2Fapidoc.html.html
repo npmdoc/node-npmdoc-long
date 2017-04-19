@@ -56,6 +56,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.long.long">
+            function <span class="apidocSignatureSpan"></span>long
+            <span class="apidocSignatureSpan">(low, high, unsigned)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.long.fromBits">
             function <span class="apidocSignatureSpan">long.</span>fromBits
             <span class="apidocSignatureSpan">(lowBits, highBits, unsigned)</span>
@@ -162,6 +171,38 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.long" id="apidoc.module.long">module long</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.long.long" id="apidoc.element.long.long">
+        function <span class="apidocSignatureSpan"></span>long
+        <span class="apidocSignatureSpan">(low, high, unsigned)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Long(low, high, unsigned) {
+
+    /**
+     * The low 32 bits as a signed value.
+     * @type {number}
+     */
+    this.low = low | 0;
+
+    /**
+     * The high 32 bits as a signed value.
+     * @type {number}
+     */
+    this.high = high | 0;
+
+    /**
+     * Whether unsigned or not.
+     * @type {boolean}
+     */
+    this.unsigned = !!unsigned;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
