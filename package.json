@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "long",
-    "description": "#### api documentation for  [long (v3.2.0)](https://github.com/dcodeIO/long.js#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-long.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-long) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-long.svg)](https://travis-ci.org/npmdoc/node-npmdoc-long)",
+    "description": "#### basic api documentation for  [long (v3.2.0)](https://github.com/dcodeIO/long.js#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-long.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-long) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-long.svg)](https://travis-ci.org/npmdoc/node-npmdoc-long)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "long": "*",

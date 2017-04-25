@@ -1,6 +1,6 @@
 # npmdoc-long
 
-#### api documentation for  [long (v3.2.0)](https://github.com/dcodeIO/long.js#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-long.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-long) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-long.svg)](https://travis-ci.org/npmdoc/node-npmdoc-long)
+#### basic api documentation for  [long (v3.2.0)](https://github.com/dcodeIO/long.js#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-long.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-long) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-long.svg)](https://travis-ci.org/npmdoc/node-npmdoc-long)
 
 #### A Long class for representing a 64-bit two's-complement integer value.
 
@@ -67,7 +67,8 @@
         "make": "npm run-script build && npm run-script compile && npm run-script compress && npm test",
         "test": "node node_modules/testjs/bin/testjs tests/suite.js"
     },
-    "version": "3.2.0"
+    "version": "3.2.0",
+    "bin": {}
 }
 ```
 
